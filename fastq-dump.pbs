@@ -1,0 +1,26 @@
+#!/bin/sh
+#PBS -N fastq-dump
+#PBS -q long
+#PBS -l nodes=1:ppn=1
+#PBS -o /lustre/user/hubenxia/data/Zika/fastq-dump.out
+#PBS -e /lustre/user/hubenxia/data/Zika/fastq-dump.err
+
+
+/lustre/user/hubenxia/software/sratoolkit.2.3.4-2-ubuntu64/bin/fastq-dump.2.3.4  --split-files  /lustre/user/hubenxia/data/Zika/SRR3191542.sra  -O /lustre/user/hubenxia/data/Zika/ 
+
+/lustre/user/hubenxia/software/sratoolkit.2.3.4-2-ubuntu64/bin/fastq-dump.2.3.4  --split-files  /lustre/user/hubenxia/data/Zika/SRR3191543.sra  -O /lustre/user/hubenxia/data/Zika/ 
+
+/lustre/user/hubenxia/software/sratoolkit.2.3.4-2-ubuntu64/bin/fastq-dump.2.3.4  --split-files  /lustre/user/hubenxia/data/Zika/SRR3191544.sra  -O /lustre/user/hubenxia/data/Zika/ 
+
+/lustre/user/hubenxia/software/sratoolkit.2.3.4-2-ubuntu64/bin/fastq-dump.2.3.4  --split-files  /lustre/user/hubenxia/data/Zika/SRR3191545.sra  -O /lustre/user/hubenxia/data/Zika/ 
+
+/lustre/user/hubenxia/software/sratoolkit.2.3.4-2-ubuntu64/bin/fastq-dump.2.3.4  --split-files  /lustre/user/hubenxia/data/Zika/SRR3194428.sra  -O /lustre/user/hubenxia/data/Zika/ 
+
+/lustre/user/hubenxia/software/sratoolkit.2.3.4-2-ubuntu64/bin/fastq-dump.2.3.4  --split-files  /lustre/user/hubenxia/data/Zika/SRR3194429.sra  -O /lustre/user/hubenxia/data/Zika/ 
+
+/lustre/user/hubenxia/software/sratoolkit.2.3.4-2-ubuntu64/bin/fastq-dump.2.3.4  --split-files  /lustre/user/hubenxia/data/Zika/SRR3194430.sra  -O /lustre/user/hubenxia/data/Zika/ 
+
+/lustre/user/hubenxia/software/sratoolkit.2.3.4-2-ubuntu64/bin/fastq-dump.2.3.4  --split-files  /lustre/user/hubenxia/data/Zika/SRR3194431.sra  -O /lustre/user/hubenxia/data/Zika/ 
+
+
+

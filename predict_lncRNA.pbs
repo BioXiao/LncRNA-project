@@ -1,0 +1,12 @@
+#!/bin/sh
+#PBS -N LncRNA
+#PBS -q long
+#PBS -l nodes=1:ppn=2
+#PBS -o /lustre/user/hubenxia/data/Zika/LncRNA.out
+#PBS -e /lustre/user/hubenxia/data/Zika/LncRNA.err
+
+cd  /lustre/user/hubenxia/data/Zika/novellncRNA
+
+#perl predict_novel_LncRNA.pl  -input1 Homo_sapiens.GRCh38.83.gtf -input2 HSVnovel.combined.gtf  -output LncRNA_ref.gtf
+
+python ./predict_novel_LncRNA.py -i1 /lustre/user/hubenxia/data/NCBI_LncRNA/Homo_sapiens.GRCh38.83.gtf -i2 ./ZIKVnovel.tracking  -i3 ./ZIKVnovel.combined.gtf  -o ./ref_lncRNA_final.gtf

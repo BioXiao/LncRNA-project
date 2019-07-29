@@ -1,0 +1,8 @@
+#!/bin/sh
+#PBS -N cufflinks-mock_2
+#PBS -q long
+#PBS -l nodes=4:ppn=1
+#PBS -o /lustre/user/hubenxia/data/Zika/cufflinks-mock_2.out
+#PBS -e /lustre/user/hubenxia/data/Zika/cufflinks-mock_2.err
+
+/lustre/user/hubenxia/data/cufflinks-2.2.1.Linux_x86_64/cufflinks -N -p  8 -g  /lustre/user/hubenxia/data/NCBI_LncRNA/Homo_sapiens.GRCh38.83.gtf  -o  /lustre/user/hubenxia/data/Zika/mock_2_clout  /lustre/user/hubenxia/data/Zika/tophat_mock_2/accepted_hits.bam

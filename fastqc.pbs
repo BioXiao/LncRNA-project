@@ -1,0 +1,32 @@
+#!/bin/sh
+#PBS -N fastqc
+#PBS -q long
+#PBS -l nodes=4:ppn=1
+#PBS -o /lustre/user/hubenxia/data/Zika/fastqc.out
+#PBS -e /lustre/user/hubenxia/data/Zika/fastqc.err
+
+
+#/lustre/user/hubenxia/software/FastQC/fastqc   -o /lustre/user/hubenxia/data/Zika/  /lustre/user/hubenxia/data/Zika/SRR3191542_1.fastq  
+
+#/lustre/user/hubenxia/software/FastQC/fastqc   -o /lustre/user/hubenxia/data/Zika/  /lustre/user/hubenxia/data/Zika/SRR3191542_2.fastq  
+
+#/lustre/user/hubenxia/software/FastQC/fastqc   -o /lustre/user/hubenxia/data/Zika/  /lustre/user/hubenxia/data/Zika/SRR3191543_1.fastq  
+
+#/lustre/user/hubenxia/software/FastQC/fastqc   -o /lustre/user/hubenxia/data/Zika/  /lustre/user/hubenxia/data/Zika/SRR3191543_2.fastq  
+
+#/lustre/user/hubenxia/software/FastQC/fastqc   -o /lustre/user/hubenxia/data/Zika/  /lustre/user/hubenxia/data/Zika/SRR3191544_1.fastq  
+
+#/lustre/user/hubenxia/software/FastQC/fastqc   -o /lustre/user/hubenxia/data/Zika/  /lustre/user/hubenxia/data/Zika/SRR3191544_2.fastq  
+
+#/lustre/user/hubenxia/software/FastQC/fastqc   -o /lustre/user/hubenxia/data/Zika/  /lustre/user/hubenxia/data/Zika/SRR3191545_1.fastq  
+
+#/lustre/user/hubenxia/software/FastQC/fastqc   -o /lustre/user/hubenxia/data/Zika/  /lustre/user/hubenxia/data/Zika/SRR3191545_2.fastq 
+
+/lustre/user/hubenxia/software/FastQC/fastqc   -o /lustre/user/hubenxia/data/Zika/  /lustre/user/hubenxia/data/Zika/SRR3194428_1.fastq  
+
+/lustre/user/hubenxia/software/FastQC/fastqc   -o /lustre/user/hubenxia/data/Zika/  /lustre/user/hubenxia/data/Zika/SRR3194429_1.fastq  
+
+/lustre/user/hubenxia/software/FastQC/fastqc   -o /lustre/user/hubenxia/data/Zika/  /lustre/user/hubenxia/data/Zika/SRR3194430_1.fastq  
+
+/lustre/user/hubenxia/software/FastQC/fastqc   -o /lustre/user/hubenxia/data/Zika/  /lustre/user/hubenxia/data/Zika/SRR3194431_1.fastq 
+

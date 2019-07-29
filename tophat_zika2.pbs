@@ -1,0 +1,14 @@
+#!/bin/sh
+#PBS -N tophat_zika2
+#PBS -q long
+#PBS -l nodes=1:ppn=1
+#PBS -o /lustre/user/hubenxia/data/Zika/tophat_zika_2.out
+#PBS -e /lustre/user/hubenxia/data/Zika/tophat_zika_2.err
+
+#/lustre/user/hubenxia/software/sratoolkit.2.3.4-2-ubuntu64/bin/fastq-dump.2.3.4  --split-files  /lustre/user/hubenxia/data/Zika/SRR3194431.sra  -O /lustre/user/hubenxia/data/Zika/ 
+
+#/lustre/user/hubenxia/data/tophat-2.1.0.Linux_x86_64/tophat2  -p  8  -G  /lustre/user/hubenxia/data/NCBI_LncRNA/Homo_sapiens.GRCh38.83.gtf   -o   /lustre/user/hubenxia/data/Zika/tophat_zika_2   /lustre/user/hubenxia/data/NCBI_LncRNA/Homo_sapiens.GRCh38   /lustre/user/hubenxia/data/Zika/SRR3194431_1.fastq
+
+cd /lustre/user/hubenxia/data/Zika/tophat_zika_2
+samtools sort ./accepted_hits.bam ./accepted_hits
+samtools index  ./accepted_hits.bam

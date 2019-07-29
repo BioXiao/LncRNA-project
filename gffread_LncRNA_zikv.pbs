@@ -1,0 +1,8 @@
+#!/bin/sh
+#PBS -N gffreadLncRNAzikv
+#PBS -q long
+#PBS -l nodes=4:ppn=1
+#PBS -o /lustre/user/hubenxia/data/Zika/gffreadLncRNAzikv.out
+#PBS -e /lustre/user/hubenxia/data/Zika/gffreadLncRNAzikv.err
+
+/lustre/user/hubenxia/data/cufflinks-2.2.1.Linux_x86_64/gffread      -O /lustre/user/hubenxia/data/Zika/novellncRNA/ref_lncRNA_final.gtf -g /lustre/user/hubenxia/data/NCBI_LncRNA/Homo_sapiens.GRCh38.fa -w /lustre/user/hubenxia/data/Zika/novellncRNA/LncRNA_ZIKV.fa       
