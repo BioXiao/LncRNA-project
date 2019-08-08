@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-#按照逗号分隔每一行的基因
+#鎸夌収閫楀彿鍒嗛殧姣忎竴琛岀殑鍩哄洜
 use strict;
 use warnings;
 my ($input,$output);
