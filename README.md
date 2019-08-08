@@ -2,13 +2,13 @@
 
 # de novo LncRNA prediction
 
-# Checking the quality of RNA-seq and filter low quality reads
+## Checking the quality of RNA-seq and filter low quality reads
 
-# Aligning RNA-seq to reference genome with Tophat2
+Aligning RNA-seq to reference genome with Tophat2
 
-# Assembly and quanlitation of transcripts with Cufflinks
+Assembly and quanlitation of transcripts with Cufflinks
 
-# Discovering known and de novo LncRNAs
+Discovering known and de novo LncRNAs
 
 # Differential expression analysis for LncRNAs with Cufflinks
 
